@@ -27,4 +27,16 @@ public class Mammal extends AbstractAnimal
         return "live Birth";
     }
 
+    @Override
+    public String toString()
+    {
+        return "Mammal{" +
+                "name='" + name + '\'' +
+                ", year=" + year + 
+                ", moves=" + move() + 
+                ", breaths=" + breath()  + 
+                ", reproduces=" + reproduce() +
+                '}';
+    }
+
 }

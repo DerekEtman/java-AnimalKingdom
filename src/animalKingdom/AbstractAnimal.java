@@ -19,10 +19,24 @@ public abstract class AbstractAnimal
         this.year = year;
     }
 
+    public abstract String move();
+    public abstract String breath();
+    public abstract String reproduce();
+
+
     // Getters and Setters
-    public abstract int getId();
-    public abstract String getName();
-    public abstract int getYear();
+    public int getId()
+    {
+        return id;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public int getYear()
+    {
+        return year;
+    }
 
     public void getFood()
     {

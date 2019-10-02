@@ -19,9 +19,21 @@ public class Fish extends AbstractAnimal
         return "Gills";
     }
 
-    public String repoduce()
+    public String reproduce()
     {
         return "eggs";
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Fish{" +
+                "name='" + name + '\'' +
+                ", year=" + year + 
+                ", moves=" + move() + 
+                ", breaths=" + breath()  + 
+                ", reproduces=" + reproduce() +
+                '}';
     }
 
 }
